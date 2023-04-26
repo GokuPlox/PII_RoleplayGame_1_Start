@@ -7,9 +7,9 @@ namespace RoleplayGame
 
           public int Health {get;set;}
 
-          public string Weapon {get;set;}
+          public Weapons Weapon {get;set;}
 
-        public Elves (int attack,int defense, int health, string weapon)
+        public Elves (int attack,int defense, int health, Weapons weapon)
         {
             this.Attack=attack;
             this.Defense=defense;
