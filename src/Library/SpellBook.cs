@@ -1,13 +1,17 @@
 using System.Collections;
+using System.Collections.Generic;
+
 namespace RoleplayGame 
 {
     public class SpellBook
 
     {
-        private List<Spell> new List<Spells>() {get;set;}
-        public Spellbook()
+        private List<Spell> Spells;
+        public SpellBook()
         {
-            this.Spells = new List<Spell>(new Spell("Fireball", 20), new Spell("Magic bolt", 15));
+            this.Spells = new List<Spell>();
+            Spells.Add(new Spell("Fireball", 20));
+            Spells.Add(new Spell("Magic bolt", 15));
         }
     }
 }
